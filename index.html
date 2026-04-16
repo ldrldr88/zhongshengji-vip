@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>种生基终身服务官网｜成功人士与精英家庭的天时地利布局</title>
+  <meta name="description" content="种生基终身服务官网，面向已成功但希望进一步突破的成功人士与精英家庭，提供种生基基础说明、适用人群、核心问题、完整流程、常见问题与咨询方案。">
+  <meta name="keywords" content="种生基,种生基终身服务,种生基流程,种生基适合什么人,种生基FAQ">
+  <link rel="canonical" href="https://zhongshengji.vip/">
+  <style>
+    /* 原始首页样式100%保留，精确复制 */
+    :root {
+      --bg: #f5f1e8;
+      --surface: #fbf8f2;
+      --surface-2: #efe7d9;
+      --text: #1e1a16;
+      --muted: #5a5247;
+      --line: #d4c7b2;
+      --accent: #7a5c2e;
+      --accent-dark: #5d4521;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Noto Serif SC", "PingFang SC", "Microsoft YaHei", serif;
+      background: linear-gradient(180deg, #f8f4ec 0%, #f3ede2 100%);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { 
+      width: min(var(--max), calc(100% - 32px)); 
+      margin: 0 auto;
+      max-width: var(--max);
+    }
+    header {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(251, 248, 242, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      min-height: 72px; 
+      gap: 24px;
+    }
+    .brand { 
+      font-size: 20px; 
+      font-weight: 700; 
+      letter-spacing: 1px; 
+    }
+    .menu { 
+      display: flex; 
+      gap: 18px; 
+      flex-wrap: wrap; 
+      font-size: 14px; 
+      color: var(--muted); 
+    }
+    /* 优化版下拉菜单 - 紧凑版 */
+    .nav-menu { 
+      position: relative; 
+    }
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 4px 0;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      min-width: 200px;
+      max-width: 240px;
+      z-index: 30;
+      display: none;
+    }
+    .nav-menu:hover .nav-dropdown { 
+      display: block; 
+    }
+    .nav-dropdown a { 
+      display: block; 
+      padding: 10px 16px; 
+      font-size: 13px; 
+      border-radius: 6px; 
+      transition: all .2s ease;
+      white-space: nowrap;
+    }
+    .nav-dropdown a:hover { 
+      background: var(--surface-2); 
+      color: var(--accent);
+      padding-left: 20px;
+    }
+    /* 原有所有样式100%保留 */
+    .hero { padding: 72px 0 48px; }
+    .hero-card {
+      background: radial-gradient(circle at top right, rgba(122,92,46,0.09), transparent 28%), var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 44px;
+      box-shadow: 0 20px 50px rgba(70,52,27,.08);
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+      background: var(--surface-2);
+      margin-bottom: 18px;
+    }
+    h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.2; margin: 0 0 18px; }
+    h2 { font-size: clamp(26px, 3vw, 34px); line-height: 1.25; margin: 0 0 16px; }
+    h3 { font-size: 20px; line-height: 1.4; margin: 0 0 10px; }
+    p { margin: 0 0 16px; color: var(--muted); }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 26px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 700;
+      border: 1px solid var(--accent);
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-secondary { background: transparent; color: var(--accent-dark); }
+    section { padding: 28px 0; }
+    .section-card {
+      background: rgba(251,248,242,0.82);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 34px;
+    }
+    .grid { display: grid; gap: 18px; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .item {
+      background: #fffdf9;
+      border: 1px solid #e5dac9;
+      border-radius: 18px;
+      padding: 22px;
+    }
+    footer {
+      padding: 40px 0 60px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 860px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .nav { flex-direction: column; align-items: flex-start; gap: 12px; padding: 16px 0; }
+      .menu { flex-direction: column; gap: 8px; width: 100%; }
+      .nav-dropdown { position: static; transform: none; left: auto; box-shadow: none; border: none; border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">zhongshengji.vip</div>
+      <nav class="menu">
+        <a href="#hero">首页</a>
+        <div class="nav-menu">
+          <a href="#" style="cursor: pointer;">种生基专栏</a>
+          <div class="nav-dropdown">
+            <a href="/what-is-zhongshengji.html">什么是种生基</a>
+            <a href="/who-suitable.html">什么人适合</a>
+            <a href="/process.html">完整流程</a>
+            <a href="/faq.html">常见问题</a>
+          </div>
+        </div>
+        <a href="#contact">咨询梁先生</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO 完全原版 -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="eyebrow">种生基终身服务官网</div>
+          <h1>种生基终身服务｜为成功人士与精英家庭布局天时地利</h1>
+          <p>面向已成功但希望进一步突破的成功人士与精英家庭，提供种生基基础说明、适用人群、核心问题、完整流程、常见问题与咨询方案。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:liangdongrong@gmail.com">邮箱咨询</a>
+            <a class="btn btn-secondary" href="#contact">查看联系方式</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 所有原有section保持100%原样 -->
+    <!-- 什么是种生基 section -->
+    <section id="about">
+      <div class="container section-card">
+        <h2>什么是种生基</h2>
+        <p>种生基又称寿坟或活人墓，是将人自身的灵气物，如头发、指甲、血液及生辰八字，放入罐子中，埋藏到风水宝地里，借由地理灵气的力量引导到自身，帮助扭转运势、消灾解厄、开拓运势的风水术。</p>
+        <div class="grid grid-2">
+          <article class="item">
+            <h3>种生基又称寿坟或活人墓</h3>
+            <p>种生基是活人在世时所做的风水布局。</p>
+          </article>
+          <article class="item">
+            <h3>通过灵气物与龙穴产生共振</h3>
+            <p>通过本人灵气物直接与龙穴产生共振，不需要透过祖先的骨磁共振。</p>
+          </article>
+          <article class="item">
+            <h3>活人在世时即可享受龙穴助力</h3>
+            <p>本人在世时就能享受龙穴助力。</p>
+          </article>
+        </div>
+        <div style="text-align:center;margin-top:24px;">
+          <a href="/what-is-zhongshengji.html" class="btn btn-primary" style="font-size:16px;padding:16px 32px;">详细了解种生基 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 适合人群 section -->
+    <section id="who">
+      <div class="container section-card">
+        <h2>什么样的人适合种生基</h2>
+        <p>种生基适合已经走投无路需要败中求胜的人，也适合已经很好、但想再突破的人。</p>
+        <div class="grid grid-2">
+          <article class="item">
+            <h3>已经很好，想要更好的人</h3>
+            <p>适合已经有成就、但还希望更上一层楼的人。</p>
+          </article>
+          <article class="item">
+            <h3>一直无法突破，需要外力助推的人</h3>
+            <p>适合人和已经做到极致，但始终卡在关键节点、需要借助天时地利的人。</p>
+          </article>
+        </div>
+        <div style="text-align:center;margin-top:24px;">
+          <a href="/who-suitable.html" class="btn btn-primary" style="font-size:16px;padding:16px 32px;">查看适合人群 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 流程 section -->
+    <section id="process">
+      <div class="container section-card">
+        <h2>种生基的完整流程</h2>
+        <p>完整流程的前提，是必须找到符合龙山向水地理规则、格局良好的龙穴。</p>
+        <div class="grid grid-2">
+          <article class="item">
+            <h3>命主准备相关灵气物</h3>
+            <p>命主需准备头发、指甲、血液，以及穿过的衣服、裤子、鞋子。</p>
+          </article>
+          <article class="item">
+            <h3>前置作业与物品准备</h3>
+            <p>会将相关灵气物放入舍利塔，并将生辰八字、姓名、住址刻在长生牌位上。</p>
+          </article>
+        </div>
+        <div style="text-align:center;margin-top:24px;">
+          <a href="/process.html" class="btn btn-primary" style="font-size:16px;padding:16px 32px;">查看完整流程 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ 入口 -->
+    <section style="padding: 48px 0; background: var(--surface-2);">
+      <div class="container section-card">
+        <h2 style="text-align:center;">还有疑问？</h2>
+        <p style="text-align:center;color:var(--muted);max-width:600px;margin:0 auto 32px;">24个常见问题全解答，消除所有疑虑</p>
+        <div style="text-align:center;">
+          <a href="/faq.html" class="btn btn-primary" style="font-size:16px;padding:16px 32px;">查看常见问题 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系模块保持原样 -->
+    <section id="contact">
+      <div class="container section-card">
+        <h2>联系我们咨询方案</h2>
+        <p>如果你正处在事业突破、子女关键期、重大决策、健康危机或运势连续受挫等阶段，可以进入咨询评估。</p>
+        <div class="grid grid-2">
+          <article class="item">
+            <h3>适合咨询的人群</h3>
+            <p>适合希望为自己或家人做长远布局的成功人士与精英家庭。</p>
+          </article>
+          <article class="item">
+            <h3>咨询前建议准备的信息</h3>
+            <p>建议先整理自己的核心需求、关键阶段和希望布局的方向，再进入深度沟通。</p>
+          </article>
+          <article class="item">
+            <h3>联系人</h3>
+            <p>梁东荣 先生</p>
+          </article>
+          <article class="item">
+            <h3>微信 / WeChat</h3>
+            <p>NSDG521</p>
+          </article>
+          <article class="item">
+            <h3>邮箱</h3>
+            <p><a href="mailto:liangdongrong@gmail.com">liangdongrong@gmail.com</a></p>
+          </article>
+        </div>
+        <div class="hero-actions" style="justify-content:center;margin-top:32px;">
+          <a class="btn btn-primary" href="mailto:liangdongrong@gmail.com">邮箱咨询</a>
+          <a class="btn btn-secondary" href="#contact">微信联系</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>zhongshengji.vip ｜ 联系人：梁东荣 先生 ｜ 微信：NSDG521</p>
+    </div>
+  </footer>
+</body>
+</html>
